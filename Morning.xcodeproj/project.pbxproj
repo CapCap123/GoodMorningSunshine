@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6736D03C22E1210500D45BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D03B22E1210500D45BA7 /* ViewController.swift */; };
+		6736D03C22E1210500D45BA7 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D03B22E1210500D45BA7 /* LaunchScreen.swift */; };
 		6736D04022E128C700D45BA7 /* NewYorkerRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6736D03F22E128C700D45BA7 /* NewYorkerRSS.xml */; };
 		6736D04222E138BD00D45BA7 /* BlowKiss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6736D04122E138BD00D45BA7 /* BlowKiss.wav */; };
 		6736D04422E139CF00D45BA7 /* SnoozeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */; };
 		67459F6822E117DE00E32EB6 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67459F6722E117DE00E32EB6 /* Parser.swift */; };
-		677E7B2A22DF6617008C1F86 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E7B2922DF6617008C1F86 /* TableViewController.swift */; };
+		6778606722E4C36800376A6F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778606622E4C36800376A6F /* WebViewController.swift */; };
+		677E7B2A22DF6617008C1F86 /* StandardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */; };
 		677E7B3222DFD6E3008C1F86 /* FeedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E7B3122DFD6E3008C1F86 /* FeedCard.swift */; };
 		678B9F1522D25B6800F75611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678B9F1422D25B6800F75611 /* AppDelegate.swift */; };
 		678B9F1A22D25B6800F75611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678B9F1822D25B6800F75611 /* Main.storyboard */; };
 		678B9F1C22D25B6900F75611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678B9F1B22D25B6900F75611 /* Assets.xcassets */; };
-		678B9F1F22D25B6900F75611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678B9F1D22D25B6900F75611 /* LaunchScreen.storyboard */; };
 		678B9F2722D25B7F00F75611 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678B9F2622D25B7F00F75611 /* SoundManager.swift */; };
 		678B9F2B22D25E0E00F75611 /* BeachSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 678B9F2A22D25E0E00F75611 /* BeachSound.wav */; };
 		679704CC22E232D200DC63FF /* LotsOfKisses.wav in Resources */ = {isa = PBXBuildFile; fileRef = 679704CB22E232D200DC63FF /* LotsOfKisses.wav */; };
@@ -26,18 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6736D03B22E1210500D45BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6736D03B22E1210500D45BA7 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		6736D03F22E128C700D45BA7 /* NewYorkerRSS.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NewYorkerRSS.xml; sourceTree = "<group>"; };
 		6736D04122E138BD00D45BA7 /* BlowKiss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BlowKiss.wav; sourceTree = "<group>"; };
 		6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeViewController.swift; sourceTree = "<group>"; };
 		67459F6722E117DE00E32EB6 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		677E7B2922DF6617008C1F86 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6778606622E4C36800376A6F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewController.swift; sourceTree = "<group>"; };
 		677E7B3122DFD6E3008C1F86 /* FeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCard.swift; sourceTree = "<group>"; };
 		678B9F1122D25B6800F75611 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678B9F1422D25B6800F75611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678B9F1922D25B6800F75611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		678B9F1B22D25B6900F75611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		678B9F1E22D25B6900F75611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		678B9F2022D25B6900F75611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678B9F2622D25B7F00F75611 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		678B9F2A22D25E0E00F75611 /* BeachSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BeachSound.wav; sourceTree = "<group>"; };
@@ -78,19 +78,19 @@
 			isa = PBXGroup;
 			children = (
 				677E7B3122DFD6E3008C1F86 /* FeedCard.swift */,
-				67459F6722E117DE00E32EB6 /* Parser.swift */,
 				67F15DD522E412F4001EE0C1 /* RSSDetails.swift */,
-				6736D03B22E1210500D45BA7 /* ViewController.swift */,
-				677E7B2922DF6617008C1F86 /* TableViewController.swift */,
-				6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */,
+				67459F6722E117DE00E32EB6 /* Parser.swift */,
 				678B9F1822D25B6800F75611 /* Main.storyboard */,
+				6736D03B22E1210500D45BA7 /* LaunchScreen.swift */,
+				6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */,
 				679704CF22E27E2000DC63FF /* CustomTableViewController.swift */,
+				677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */,
+				6778606622E4C36800376A6F /* WebViewController.swift */,
 				678B9F1B22D25B6900F75611 /* Assets.xcassets */,
 				678B9F2622D25B7F00F75611 /* SoundManager.swift */,
 				6736D04122E138BD00D45BA7 /* BlowKiss.wav */,
 				679704CB22E232D200DC63FF /* LotsOfKisses.wav */,
 				678B9F2A22D25E0E00F75611 /* BeachSound.wav */,
-				678B9F1D22D25B6900F75611 /* LaunchScreen.storyboard */,
 				678B9F1422D25B6800F75611 /* AppDelegate.swift */,
 				678B9F2022D25B6900F75611 /* Info.plist */,
 			);
@@ -155,7 +155,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678B9F1F22D25B6900F75611 /* LaunchScreen.storyboard in Resources */,
 				6736D04022E128C700D45BA7 /* NewYorkerRSS.xml in Resources */,
 				679704CC22E232D200DC63FF /* LotsOfKisses.wav in Resources */,
 				678B9F1C22D25B6900F75611 /* Assets.xcassets in Resources */,
@@ -175,10 +174,11 @@
 				678B9F1522D25B6800F75611 /* AppDelegate.swift in Sources */,
 				6736D04422E139CF00D45BA7 /* SnoozeViewController.swift in Sources */,
 				67459F6822E117DE00E32EB6 /* Parser.swift in Sources */,
+				6778606722E4C36800376A6F /* WebViewController.swift in Sources */,
 				678B9F2722D25B7F00F75611 /* SoundManager.swift in Sources */,
 				679704D022E27E2000DC63FF /* CustomTableViewController.swift in Sources */,
-				6736D03C22E1210500D45BA7 /* ViewController.swift in Sources */,
-				677E7B2A22DF6617008C1F86 /* TableViewController.swift in Sources */,
+				6736D03C22E1210500D45BA7 /* LaunchScreen.swift in Sources */,
+				677E7B2A22DF6617008C1F86 /* StandardTableViewController.swift in Sources */,
 				67F15DD622E412F4001EE0C1 /* RSSDetails.swift in Sources */,
 				677E7B3222DFD6E3008C1F86 /* FeedCard.swift in Sources */,
 			);
@@ -193,14 +193,6 @@
 				678B9F1922D25B6800F75611 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		678B9F1D22D25B6900F75611 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				678B9F1E22D25B6900F75611 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

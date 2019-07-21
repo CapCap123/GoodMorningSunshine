@@ -12,7 +12,7 @@ struct Card {
     var cardTitle: String
     var cardSubtitle: String
     var cardImageURL: String
-    var postURL: String
+    var cardPostURL: String
 }
 
 

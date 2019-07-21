@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Rss feed specifics, per feed
 class RssDetails {
     
     let numberOfCells: [Int] = [
@@ -35,6 +36,11 @@ class RssDetails {
     let subtitleIdentifier = [
     "description",
     ""
+    ]
+    
+    let imageRssType = [
+    "enclosure",
+    "image"
     ]
     
     let imageIdentifier1 = [

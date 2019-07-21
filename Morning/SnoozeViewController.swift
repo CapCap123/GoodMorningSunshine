@@ -26,7 +26,7 @@ class SnoozeViewController: UIViewController {
         MorningButton.isHidden = false
         SnoozeButton.isHidden = false
         let sliderValue = Int(SnoozeSlider.value)
-        SnoozeButton.setTitle("Wake me up in \(sliderValue) minutes", for: .normal)
+        SnoozeButton.setTitle("Wake me up in \(sliderValue) minutes", for: .normal) // adjust so only text updates, not the whole button
         // Do any additional setup after loading the view.
 }
     

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6736D03C22E1210500D45BA7 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D03B22E1210500D45BA7 /* LaunchScreen.swift */; };
-		6736D04022E128C700D45BA7 /* NewYorkerRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6736D03F22E128C700D45BA7 /* NewYorkerRSS.xml */; };
+		6736D04022E128C700D45BA7 /* RssItems.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6736D03F22E128C700D45BA7 /* RssItems.xml */; };
 		6736D04222E138BD00D45BA7 /* BlowKiss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6736D04122E138BD00D45BA7 /* BlowKiss.wav */; };
 		6736D04422E139CF00D45BA7 /* SnoozeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */; };
 		67459F6822E117DE00E32EB6 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67459F6722E117DE00E32EB6 /* Parser.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		6736D03B22E1210500D45BA7 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		6736D03F22E128C700D45BA7 /* NewYorkerRSS.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NewYorkerRSS.xml; sourceTree = "<group>"; };
+		6736D03F22E128C700D45BA7 /* RssItems.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RssItems.xml; sourceTree = "<group>"; };
 		6736D04122E138BD00D45BA7 /* BlowKiss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BlowKiss.wav; sourceTree = "<group>"; };
 		6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeViewController.swift; sourceTree = "<group>"; };
 		67459F6722E117DE00E32EB6 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		678B9F0822D25B6800F75611 = {
 			isa = PBXGroup;
 			children = (
-				6736D03F22E128C700D45BA7 /* NewYorkerRSS.xml */,
+				6736D03F22E128C700D45BA7 /* RssItems.xml */,
 				678B9F1322D25B6800F75611 /* Morning */,
 				678B9F1222D25B6800F75611 /* Products */,
 			);
@@ -155,7 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6736D04022E128C700D45BA7 /* NewYorkerRSS.xml in Resources */,
+				6736D04022E128C700D45BA7 /* RssItems.xml in Resources */,
 				679704CC22E232D200DC63FF /* LotsOfKisses.wav in Resources */,
 				678B9F1C22D25B6900F75611 /* Assets.xcassets in Resources */,
 				678B9F2B22D25E0E00F75611 /* BeachSound.wav in Resources */,

@@ -152,11 +152,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="369" id="kg1-Zw-rcC" customClass="CustomTableViewCell" customModule="Morning" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="369"/>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="395" id="kg1-Zw-rcC" customClass="CustomTableViewCell" customModule="Morning" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="395"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kg1-Zw-rcC" id="9ay-O9-pI2" customClass="CustomTableViewCell" customModule="Morning" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="368.5"/>
+                                <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kg1-Zw-rcC" id="9ay-O9-pI2" customClass="CustomCell" customModule="Morning" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="394.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gaH-1U-Lbe">
@@ -166,7 +166,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="Tim-cR-6n5">
-                                            <rect key="frame" x="30" y="106.5" width="354" height="254"/>
+                                            <rect key="frame" x="30" y="132.5" width="354" height="254"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="254" id="oZJ-ce-ot6"/>
                                             </constraints>
@@ -180,7 +180,6 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.99420350859999995" green="1" blue="0.80923900439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="4wI-XY-cPv" firstAttribute="top" secondItem="9ay-O9-pI2" secondAttribute="top" constant="71" id="1vm-X8-7sX"/>
                                         <constraint firstItem="4wI-XY-cPv" firstAttribute="centerX" secondItem="9ay-O9-pI2" secondAttribute="centerX" constant="-3.5" id="7QA-gU-J38"/>
                                         <constraint firstItem="Tim-cR-6n5" firstAttribute="top" secondItem="4wI-XY-cPv" secondAttribute="bottom" constant="21.5" id="Btn-xN-tpo"/>
                                         <constraint firstItem="gaH-1U-Lbe" firstAttribute="top" secondItem="9ay-O9-pI2" secondAttribute="top" constant="11" id="FnM-m7-Ve4"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class CustomCell: UITableViewCell {
     
     @IBOutlet weak var CellTitle: UILabel!
     @IBOutlet weak var CellSubtitle: UILabel!
@@ -47,7 +47,7 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
+        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "CustomCell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
@@ -73,10 +73,12 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
         return 1
     }
     
+  /*
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return feed.count
     }
+ */
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
@@ -97,10 +99,11 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
 // setup cell
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
         let card = feed[indexPath.row]
         cell.CellTitle.text = card.cardTitle
+
         cell.CellSubtitle.text = card.cardSubtitle
         
 // setup image

@@ -15,6 +15,9 @@ class XMLParserManager: NSObject, XMLParserDelegate {
     var feed: [Card] = []
     var elementName: String = String()
     var feedNumber = 0
+    var cardNumber = 0
+    
+    var cardLoaded = false
     
     var cardTitle = String()
     var cardSubtitle = String()
@@ -39,31 +42,31 @@ class XMLParserManager: NSObject, XMLParserDelegate {
     }
     
 func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-    self.elementName = elementName
 
+    self.elementName = elementName
 
     if elementName == rssFeed.itemIdentifier[feedNumber-1] {
         cardTitle = String()
         cardSubtitle = String()
         cardPostURL = String()
-    }
-    
-        // parse image depending on how it appears in the feed: enclosure or image
-    else if elementName == rssFeed.imageIdentifier1[feedNumber-1] {
-        if rssFeed.imageRssType[feedNumber-1] == "enclosure" {
-            cardImageURL = String()
-            if let urlString = attributeDict[rssFeed.imageIdentifier2[feedNumber-1]] {
-            cardImageURL.append(urlString)
-            } else {
-                print("malformed element: enclosure without thumbnail url attribute")
-            }
-        } else if rssFeed.imageRssType[feedNumber-1] == "image" {
-            cardImageURL = String()
+        
+    } else if elementName == rssFeed.imageRssType[feedNumber-1] {
+        cardImageURL = String()
+
+    } else if rssFeed.imageRssType[feedNumber-1] == "enclosure" {
+        cardImageURL = String()
+        if let urlString = attributeDict[rssFeed.imageIdentifier2[feedNumber-1]] {
+        cardImageURL.append(urlString)
         }
+    } else if rssFeed.imageRssType[feedNumber-1] == "CDATA" {
+        cardImageURL = String()
+
     }
 }
+    
 
 func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+
     if elementName == rssFeed.itemIdentifier[feedNumber-1] {
         let card = Card(cardTitle: cardTitle, cardSubtitle: cardSubtitle, cardImageURL: cardImageURL, cardPostURL: cardPostURL)
         if feed.count < rssFeed.numberOfCells[feedNumber-1] {
@@ -73,6 +76,7 @@ func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI
 }
 
 func parser(_ parser: XMLParser, foundCharacters string: String) {
+    
     
     let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     
@@ -87,6 +91,5 @@ func parser(_ parser: XMLParser, foundCharacters string: String) {
             cardImageURL += data
         }
     }
-}
-    
+    }
 }

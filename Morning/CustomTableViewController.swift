@@ -21,15 +21,22 @@ class CustomCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+       // CellImage.isHidden = true
         // Configure the view for the selected state
     }
     
-    func setUpCell() { // todo
-    }
+   /* func setupImage(image: Bool) {
+        if image == true {
+        CellImage.isHidden = false
+        } else {
+        CellImage.isHidden = true
+        }
+    }*/
 }
 
 class CustomTableViewController: UITableViewController, XMLParserDelegate {
     let RssFeed = RssDetails()
+    let CardDisplay = Display()
     let myParser = XMLParserManager()
     var feed: [Card] = []
     var selectedFeed: [Card] = []
@@ -40,14 +47,16 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
     var cardImageURL = String()
     var cardImage = UIImage ()
     
-    let numberOfFeeds = 2
-    let numberOfCells = 4
-
+    let numberOfFeeds = 3
+    let numberOfCells = 6
+    
+    let snooze = SnoozeViewController()
+    let cellClass = CustomCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300
+        tableView.estimatedRowHeight = 100
         loadRss()
     }
 
@@ -59,8 +68,8 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
             feed += myParser.feed
             }
         }
-        tableView.reloadData()
         print(feed)
+        tableView.reloadData()
     }
     
 // MARK: - Table view data source
@@ -74,55 +83,35 @@ class CustomTableViewController: UITableViewController, XMLParserDelegate {
         return feed.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
-    }
- */
-  
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-        tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.rowHeight = UITableView.automaticDimension
-    }
-    func registerTableViewCells(){
-      self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
-     CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
-    }
- */
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
 // setup cell
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
-        
+        cell.prepareForReuse()
+
+// load cell content
         let card = feed[indexPath.row]
         cell.CellTitle.text = card.cardTitle
         cell.CellSubtitle.text = card.cardSubtitle
         
-// setup image
+// load cell image
+        let isImage: Bool = CardDisplay.image[indexPath.row]
+        print(isImage)
+
+        if isImage == false {
+            cell.CellImage.isHidden = true
+        } else {
+            cell.CellImage.isHidden = false
         if let url = URL(string: card.cardImageURL),  let data = NSData(contentsOf: url) {
-        var cardImage = UIImage(data: data as Data) // add stuff to handle gif images
-        
-        cardImage = resizeImage(image: cardImage! , toTheSize: CGSize(width: 250, height: 250))
-            
-        // let cardImageView = UIImageView(image: CellImage)
-        // cardImageView.contentMode = .scaleAspectFit
-        // let cellImageLayer: CALayer?  = cell.imageView?.layer
-        // cellImageLayer!.cornerRadius = 35
-        // cellImageLayer!.masksToBounds = true
-        // cell.CellImage.sizeToFit()
-        // cell.CellImage.layoutIfNeeded()
-        
+        let cardImage = UIImage(data: data as Data) // add stuff to handle gif images
         cell.CellImage.image = cardImage
         }
-        
-// setup cell UI, to do in cell subClass?
-        cell.setUpCell()
+        }
         
         return cell
 }
-    
+
+    /*
 // to redo based on image dimmensions, to place in cell subclass? do the same for titles and subtitles?
 func resizeImage(image:UIImage, toTheSize size:CGSize)->UIImage{ // to redo
         
@@ -139,6 +128,7 @@ func resizeImage(image:UIImage, toTheSize size:CGSize)->UIImage{ // to redo
         UIGraphicsEndImageContext();
         return newImage!
 }
+    */
     
     /* ADD REDIRECTION TO POST URL WEBVIEW WHEN CLICKING ON CELL
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
@@ -151,6 +141,32 @@ func resizeImage(image:UIImage, toTheSize size:CGSize)->UIImage{ // to redo
                 // Setup new view controller
             }
     }
+     
+     /*
+     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     return 300
+     }
+     */
+     
+     /*
+     override func viewWillAppear(_ animated: Bool) {
+     tableView.estimatedRowHeight = UITableView.automaticDimension
+     tableView.rowHeight = UITableView.automaticDimension
+     }
+     func registerTableViewCells(){
+     self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+     CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
+     }
+     */
+     
+     // cardImage = resizeImage(image: cardImage! , toTheSize: CGSize(width: 354, height: 354))
+     
+     // let cardImageView = UIImageView(image: CellImage)
+     // cardImageView.contentMode = .scaleAspectFit
+     // let cellImageLayer: CALayer?  = cell.imageView?.layer
+     // cellImageLayer!.cornerRadius = 35
+     // cellImageLayer!.masksToBounds = true
+     // cell.CellImage.sizeToFit()
+     // cell.CellImage.layoutIfNeeded()
  */
-    
 }

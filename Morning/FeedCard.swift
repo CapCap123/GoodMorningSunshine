@@ -15,4 +15,15 @@ struct Card {
     var cardPostURL: String
 }
 
+struct Display {
+    let image = [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+    ]
+}
+
 

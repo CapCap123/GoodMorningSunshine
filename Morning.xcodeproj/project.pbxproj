@@ -31,7 +31,7 @@
 		6736D04122E138BD00D45BA7 /* BlowKiss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BlowKiss.wav; sourceTree = "<group>"; };
 		6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeViewController.swift; sourceTree = "<group>"; };
 		67459F6722E117DE00E32EB6 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		6778606622E4C36800376A6F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6778606622E4C36800376A6F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Morning/WebViewController.swift; sourceTree = "<group>"; };
 		677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewController.swift; sourceTree = "<group>"; };
 		677E7B3122DFD6E3008C1F86 /* FeedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCard.swift; sourceTree = "<group>"; };
 		678B9F1122D25B6800F75611 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6736D03F22E128C700D45BA7 /* RssItems.xml */,
+				677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */,
+				6778606622E4C36800376A6F /* WebViewController.swift */,
 				678B9F1322D25B6800F75611 /* Morning */,
 				678B9F1222D25B6800F75611 /* Products */,
 			);
@@ -84,8 +86,6 @@
 				6736D03B22E1210500D45BA7 /* LaunchScreen.swift */,
 				6736D04322E139CF00D45BA7 /* SnoozeViewController.swift */,
 				679704CF22E27E2000DC63FF /* CustomTableViewController.swift */,
-				677E7B2922DF6617008C1F86 /* StandardTableViewController.swift */,
-				6778606622E4C36800376A6F /* WebViewController.swift */,
 				678B9F1B22D25B6900F75611 /* Assets.xcassets */,
 				678B9F2622D25B7F00F75611 /* SoundManager.swift */,
 				6736D04122E138BD00D45BA7 /* BlowKiss.wav */,

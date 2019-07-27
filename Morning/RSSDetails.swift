@@ -41,7 +41,7 @@ class RssDetails {
     let subtitleIdentifier = [
     "description",
     "copyriht",
-    ""
+    "title"
     ]
     
     let imageRssType = [
